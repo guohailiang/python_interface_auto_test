@@ -1,4 +1,4 @@
-#coding:utf-8
+﻿#coding:utf-8
 import smtplib #邮件处理库导入
 from email.mime.text import MIMEText #导入系统自带邮件基础类
 class SendEmail:
@@ -6,8 +6,8 @@ class SendEmail:
 	global email_host #邮箱服务器
 	global password
 	email_host = "smtp.163.com"
-	send_user = "18823401017@163.com"
-	password = "08210821"
+	send_user = "1882340@163.com"
+	password = "777777"
 	def send_mail(self,user_list,sub,content): #邮件接收人，主题，内容
 		user = "Guohailiang"+"<"+send_user+">" #构建邮件发送者的信息，别名+邮箱地址
 		message = MIMEText(content,_subtype='plain',_charset='utf-8') #内容，邮件类型，编码格式
